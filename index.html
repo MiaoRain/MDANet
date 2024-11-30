@@ -73,10 +73,6 @@
                                       <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Miao Zhang</a><sup>*</sup>
                   <span class="author-block">
                                       <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Tianyu Shi</a>,</span>
-                  <span class="author-block">
-                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Xueqian Wang</a>,</span>
-                    
-                  </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
@@ -104,7 +100,7 @@ Tsinghua University</span>
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Low-light image enhancement through deep learning can improve noise reduction and visibility. However, existing methods often lack the ability to perform semantic-level, quantitative brightness adjustments, limiting their capacity for personalized lighting control. To address these limitations, we propose a novel framework that utilizes Large Language Model (LLM) capable of interpreting natural language prompt to identify target objects and specify brightness modifications. The framework then employs a Retinex-based Reasoning Segment (RRS) module to generate accurate target localization masks. Concurrently, a Text-based Brightness Controllable (TBC) module applies precise brightness adjustments based on the natural language input. To ensure seamless integration of these components, we introduce an Adaptive Contextual Compensation (ACC) module, which synthesizes multi-source input conditions, guiding a conditional diffusion model to perform accurate lighting adjustments while maintaining overall image coherence. Experimental results on benchmark datasets demonstrate the system's superior performance in enhancing visibility, maintaining natural color balance, and amplifying fine details without introducing artifacts. Our framework also exhibits strong generalization capabilities, enabling complex, semantic-level and personalized lighting adjustments through natural language interactions across various scenarios.
+            Low-light image enhancement is a vital process that seeks to enhance the visibility and clarity of images taken under suboptimal lighting conditions. Traditional methods for low-light enhancement rely on altering illumination levels but struggle with local variations in lighting levels and complex scenes, often producing artifacts, color distortions, or unnatural appearances. Recent deep learning-based methods have improved performance through robust feature extraction but usually rely on single-domain datasets that cannot generalize to all lighting conditions present in real-life situations. To address these generalization challenges, we propose MDANet: a Multi-Stage Domain Adaptation framework that sequentially implements light, focus, and contextual domain adaptation. First, MDANet employs an Adaptive Lighting Enhancement Module that combines an innovative U-Net architecture with cross-domain contrastive learning for lighting invariance. Second, this framework utilizes large language models (LLMs) for context-aware adjustments while incorporating depth map constraints within an innovative Region-Focused Enhancement Module that selectively targets and processes key focal regions. Third, a Contextual Adaptation Module employs multitask meta-learning to ensure robustness and superior performance across a range of contextual scenarios.  Experimental results demonstrate that MDANet consistently outperforms both traditional and state-of-the-art methods by offering both improved image quality as well as generalization across diverse low-light scenarios. \textcolor{blue}{Experimental results show that MDANet achieves state-of-the-art performance across multiple datasets, including MUSIQ scores of 38.219 on LOL, 39.675 on SID, and 39.825 on RELLISUR, outperforming all compared methods in both perceptual and quantitative metrics.
           </p>
         </div>
       </div>
@@ -123,20 +119,20 @@ Tsinghua University</span>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="intro1.png" alt="MY ALT TEXT"/>
+        <img src="head.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">The overview of low light enhance tasks.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="framework2.png" lt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">The overview of our method, including the RRS Module, TBC Module, ACC Module and diffusion part.
+        <img src="framework_all.png" lt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">This framework introduces a multi-stage domain adaptation approach for low-light image enhancement. It incorporates an Adaptive Lighting Enhancement Module (top) that learns light invariance through cross-domain contrastive learning, a Region-Focused Enhancement Module (middle) that leverages large language model prompts for high-level semantic information and depth images for spatial domain information to achieve selective key area improvement, and a Contextual Adaptation Module (bottom) that fine-tunes model responses to various lighting conditions using meta-learning and multi-scale LoRA layer strategies. Each module collaborates sequentially to achieve light, focus, and contextual domain adaptation, resulting in optimal visual enhancement and strong generalization capabilities.
         </h2>
       </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="framework_selective.png" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">The architecture of ACC Module
+      <img src="MC-Adapter.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">The MC-adapter reshapes and processes input features in parallel, combining them across branches while retaining original dimensions for refined output.
       </h2>
      </div>
   </div>
@@ -152,31 +148,31 @@ Tsinghua University</span>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="lol1.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">Visual comparison with other state-of-the-art methods on LOL.
+        <img src="comparison.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">Visual comparison of different low-light image enhancement models using Exdark dataset.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="lol2.png" lt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">Visual comparison with other state-of-the-art methods on LOL2.
+        <img src="lol1.png" lt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">Visual comparison with other state-of-the-art methods on LOL1.
         </h2>
       </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="DICM.png" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">Visual comparison with other state-of-the-art methods on DICM.
+      <img src="lol2.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">Visual comparison with other advanced approaches on LOM and LOL2.
       </h2>
      </div>
       <div class="item">
       <!-- Your image here -->
-      <img src="LOM.png" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">Visual comparison with other state-of-the-art methods on LOM.
+      <img src="openworld.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">Visual comparison with other advanced approaches on DCIM, REAL, LIME and MEF.
       </h2>
      </div>
       <div class="item">
       <!-- Your image here -->
-      <img src="MEF.png" alt="MY ALT TEXT"/>
+      <img src="low_light_centric.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">Visual comparison with other state-of-the-art methods on MEF.
       </h2>
      </div>
@@ -191,6 +187,7 @@ Tsinghua University</span>
 </div>
 </section>
 <!-- End image carousel -->
+
   
 <!-- Single Image Display -->
 <section class="hero is-small">
