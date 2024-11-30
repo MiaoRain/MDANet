@@ -81,8 +81,6 @@ Tsinghua University</span>
                     <span class="eql-cntrb"><small><br><sup>†</sup>Indicates Equal Contribution</small></span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Corresponding Author</small></span>
                   </div>
-
-
             
             </div>
           </div>
@@ -171,10 +169,48 @@ Tsinghua University</span>
     <div class="container">
       <!-- Single image container -->
       <div class="item has-text-centered">
-        <img src="MC-Adapter.jpg" alt="MY ALT TEXT" />
+        <img src="comparison.png" alt="MY ALT TEXT" />
         <!-- Subtitle text container with centered text -->
         <p class="subtitle">
-            The MC-adapter reshapes and processes input features in parallel, combining them across branches while retaining original dimensions for refined output.
+            Visual comparison of different low-light image enhancement models using Exdark dataset.
+        </h2>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Single Image Display -->
+
+
+
+<!-- Single Image Display -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Single image container -->
+      <div class="item has-text-centered">
+        <img src="lol1.png" alt="MY ALT TEXT" />
+        <!-- Subtitle text container with centered text -->
+        <p class="subtitle">
+            Visual comparison with other state-of-the-art methods on LOL1.
+        </h2>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Single Image Display -->
+  
+<!-- Single Image Display -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Single image container -->
+      <div class="item has-text-centered">
+        <img src="lol2.png" alt="MY ALT TEXT" />
+        <!-- Subtitle text container with centered text -->
+        <p class="subtitle">
+            Visual comparison with other advanced approaches on LOM and LOL2.
         </h2>
         </p>
       </div>
@@ -184,68 +220,17 @@ Tsinghua University</span>
 <!-- End Single Image Display -->
 
   
-
-
-<!-- Image carouse2 -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="comparison.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">Visual comparison of different low-light image enhancement models using Exdark dataset.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="lol1.png" lt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">Visual comparison with other state-of-the-art methods on LOL1.
-        </h2>
-      </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="lol2.png" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">Visual comparison with other advanced approaches on LOM and LOL2.
-      </h2>
-     </div>
-      <div class="item">
-      <!-- Your image here -->
-      <img src="openworld.png" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">Visual comparison with other advanced approaches on DCIM, REAL, LIME and MEF.
-      </h2>
-     </div>
-      <div class="item">
-      <!-- Your image here -->
-      <img src="low_light_centric.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">Visual comparison with other state-of-the-art methods on MEF.
-      </h2>
-     </div>
-      <div class="item">
-      <!-- Your image here -->
-      <img src="REAL.png" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">Visual comparison with other state-of-the-art methods on REAL.
-      </h2>
-     </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-  
 <!-- Single Image Display -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <!-- Single image container -->
       <div class="item has-text-centered">
-        <img src="local_enhance.png" alt="MY ALT TEXT" />
+        <img src="openworld.png" alt="MY ALT TEXT" />
         <!-- Subtitle text container with centered text -->
         <p class="subtitle">
-          Results of different tasks, Task A and B aimed at decreasing it and some others aimed at increasing brightness, covering a range of scenes such
-          as stage performances, everyday environments, and medical images. The tasks, labeled A through E, involve modifying the brightness of a masked object
-          or area (main character, lady, blackboard, side representing evil, left lung) by a percentage ranging from 10% to 40%.
+            Visual comparison with other advanced approaches on DCIM, REAL, LIME and MEF.
+        </h2>
         </p>
       </div>
     </div>
@@ -259,12 +244,12 @@ Tsinghua University</span>
     <div class="container">
       <!-- Single image container -->
       <div class="item has-text-centered">
-        <img src="Flexible_Adjustment.png" alt="MY ALT TEXT" />
+        <img src="low_light_centric.jpg" alt="MY ALT TEXT" />
         <!-- Subtitle text container with centered text -->
         <p class="subtitle">
-         The application of natural language processing enables complex lighting adjustments in images. 
-          In each task, natural language instructions are used to brighten both target and background lighting adjustments, 
-          all driven by linguistic input. 
+            The process of Region-Focused diffusion applied to a low-light image. The heatmap highlights the important regions in the image. A mask is generated from the heatmap, and the
+Region-Focused diffusion model enhances the relevant object in the final output.
+        </h2>
         </p>
       </div>
     </div>
@@ -272,16 +257,38 @@ Tsinghua University</span>
 </section>
 <!-- End Single Image Display -->
 
+
 <!-- Single Image Display -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <!-- Single image container -->
       <div class="item has-text-centered">
-        <img src="PR_darkface_all.png" alt="MY ALT TEXT" />
+        <img src="refinement.jpg" alt="MY ALT TEXT" />
         <!-- Subtitle text container with centered text -->
         <p class="subtitle">
-Face detection performance in low-light conditions is shown across different methods. The figure  presents visual comparisons of face detection, using various enhancement techniques combined with DSFD. The "Ours + DSFD" delivers the clearest and most accurate results compared to raw input, EnlightenGAN, KinD++, LLflow, and ZeroDCE.
+            The process of image refinement using LLM-guided prompts. Starting from a dark image, the LLM generates prompts to guide the enhancement process.
+        </h2>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Single Image Display -->
+
+ <!-- Single Image Display -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Single image container -->
+      <div class="item has-text-centered">
+        <img src="darkface.png" alt="MY ALT TEXT" />
+        <!-- Subtitle text container with centered text -->
+        <p class="subtitle">
+            The effectiveness of face detection under low-light conditions is demonstrated through
+various methods. Compared to raw input, ZeroDCE, LLFlow, EnlightenGAN, Diffll, and Cle, the
+method "Ours + DSFD" produces the most precise and clear outcomes.
+      </h2>
         </p>
       </div>
     </div>
